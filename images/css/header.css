@@ -1,0 +1,104 @@
+/* Header.CSS - Copyright (c) 2011 Oliver Robson */
+
+/* Main Header */
+div.header {
+    background: url('../images/header.png') 0px -284px repeat-x;
+    height: 174px !important;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+div.logo {
+    background: url('../images/logo.png') 0px 0px no-repeat;
+    position: absolute;
+    height: 40px;
+    width: 110px;
+    top: 30px;
+    left: 0;
+}
+
+/* Text Shadows */
+.shadow_white {
+    text-shadow: 1px 1px #FFFFFF;
+}
+.shadow_black {
+    text-shadow: 1px 1px #000000;
+}
+
+/* Top Navigation */
+div.userbar {
+    background: url('../images/userbar.png') no-repeat;
+    margin: 108px 0 0 0;
+    position: absolute;
+    height: 32px;
+    width: 311px;
+}
+
+label.username {
+    padding: 10px 0 0 18px;
+    position: absolute;
+    float: left;
+}
+
+label.links {
+    padding: 10px 18px 0 0;
+    float: right;
+}
+
+/* Bottom Navigation */
+div.navigation {
+    border-left: 1px solid #9D9E96;
+    border-top: 1px solid #656560;
+    position: absolute;
+    max-width: 615px;
+    height: 29px;
+    bottom: 3px;
+    z-index: 1;
+    left: 0px;
+}
+
+div.navigation > div.buttons {
+    border-bottom: 1px solid #0C0C0C;
+    border-right: 1px solid #474744;
+    border-left: 1px solid #383835;
+    background-color: #919189;
+    height: 100%;
+}
+
+div.navigation > div.buttons > ul {
+    list-style-type: none;
+    line-height: 27px;
+}
+
+div.navigation > div.buttons > ul > li {
+    border-bottom: 1px solid #6B6B63;
+    border-right: 1px solid #74746B;
+    border-left: 1px solid #909087;
+    border-top: 1px solid #86867C;
+    background-color: #7B7B71;
+    padding-right: 11px;
+    padding-left: 12px;
+    margin-right: 1px;
+    color: #F6F6F5;
+    float: left;
+}
+
+div.navigation > div.buttons > ul > li:hover {
+    background-color: #87877C;
+    cursor: pointer;
+}
+
+div.navigation > div.buttons > ul > li:active {
+    background-color: #707068;
+    cursor: pointer;
+}
+
+div.navigation > div.buttons > ul > li.last {
+    border-right: 1px solid #50504A;
+    padding-left: 11px;
+    margin-right: 0px;
+}

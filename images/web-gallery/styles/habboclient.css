@@ -1,0 +1,44 @@
+body#client {
+	background-color: black;
+	background-image: none !important;
+	color: white;
+	text-align: left;
+}
+
+.info-client_error-text {
+    width: 190px;
+    float:left;
+}
+
+.retry-enter-hotel {
+    float: right;
+}
+
+body.client_error {
+    background-color: black;
+    background-image: none;
+}
+
+body.client_error .process-template-box {
+    background-color: black;
+}
+
+body.client_error #process-content {
+    margin-top: 88px;
+}
+
+body#popup.client_error div.centered-client-error #column1 {
+    float: none;
+    margin: 0 auto;
+}
+
+body.client_error li.client_error {
+    font-weight: bold;
+    list-style-position: inside;
+    list-style-type: decimal;
+    margin-bottom: 11px;
+}
+
+body.client_error li.client_error span {
+    font-weight: normal;
+}

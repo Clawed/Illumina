@@ -1,0 +1,119 @@
+#security-settings, #facebook-settings, #rpx-settings {
+    width: 560px;
+    float:left;
+}
+
+#settingsNavigation ul li {
+	margin-bottom: 4px;
+}
+
+#settingsNavigation ul li.selected {
+	font-weight: bold;
+}
+
+#settingsNavigation a {
+	color: #333333;
+	text-decoration:none;
+}
+
+#settingsNavigation a:hover {
+	text-decoration:underline;
+}
+
+#settings-form {
+	margin-top: 1em;
+	clear: both;
+	text-align: right;
+}
+
+#settings-hc {
+	color: white;
+	font-weight: bold;
+	clear: both;
+}
+
+#settings-hc a {
+	color: #ffce0b;
+}
+
+#settings-hc-logo {
+	background: url(../images/habbo_club.png) top right no-repeat;
+	width: 49px;
+	height: 41px;
+	float: right;
+	border: 0;
+}
+
+#settings-oldfigure {
+	padding-top: 1em;
+	clear: both;
+}
+
+#pwform h3, #emailform h3 {
+	margin: 0;
+}
+
+div.settings-step {
+	clear: both;
+	padding-top: 1.2em;
+}
+
+div.settings-step h4 {
+	float: left;
+	margin: 0;
+}
+
+div.settings-step-content {
+	padding-left: 30px;
+}
+
+.settings h3 {
+	margin-bottom:4px;
+    margin-top: 4px;
+    font-size: 12px;
+}
+
+div.settings-buttons {
+	clear: both;
+	padding-top: .7em;
+}
+
+div.settings {
+    color: #333333;
+}
+
+div.habboclub-clothes-banner {
+	background: url(../v2/images/habboclub/hc_banner.png);
+    width: 174px;
+    height: 150px;
+}
+
+div.habboclub-banner-container {
+    margin-top: 5px;
+}
+
+p.habboclub-link {
+    text-align: center;
+}
+
+p.habboclub-link a {
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+p.habboclub-header {
+    margin-top: 10px;    
+}
+
+p.feeds-disabled {
+    color: #cccccc;
+    font-style: italic;
+}
+
+#toolman-image {
+    float: right;
+}
+
+#trade-timer {
+    color: #FC6204;
+}

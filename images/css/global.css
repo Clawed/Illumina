@@ -1,0 +1,51 @@
+/* Global.CSS - Copyright (c) 2011 Oliver Robson */
+
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background: url('../images/bg.png');
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+p, ul, li {
+    padding: 0;
+    margin: 0;
+}
+
+a.orange {
+    color: #FC6236;
+}
+
+.relative {
+    position: relative;
+}
+
+.center {
+	margin: 0px auto;
+}
+	
+.static {
+	width: 905px;
+	height: 100%;
+	text-align: left;
+}
+
+div.page {
+    margin-top: 8px;
+    height: auto;
+    width: 100%;
+}
+
+div.left {
+    width: 613px;
+    height: auto;
+    float: left;
+}
+
+div.right {
+    width: 280px;
+    height: auto;
+    float: left;
+    margin-left: 10px
+}

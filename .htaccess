@@ -1,0 +1,43 @@
+RewriteEngine On
+
+# Quickregister Rules
+RewriteRule ^quickregister/start(|/)$ /register.php?_register_step=1
+RewriteRule ^quickregister/age_gate_submit(|/)$ /register.php?_register_step=2
+RewriteRule ^quickregister/email_password(|/)$ /register.php?_register_step=3
+RewriteRule ^quickregister/email_password_submit(|/)$ /register.php?_register_step=4
+RewriteRule ^quickregister/captcha(|/)$ /register.php?_register_step=5
+RewriteRule ^quickregister/captcha_submit(|/)$ /register.php?_register_step=6
+RewriteRule ^quickregister/email_password_submit/fields(|/)$ /register.php?_register_step=3&_error=Please-enter-all-the-fields.
+RewriteRule ^quickregister/age_gate/error(|/)$ /register.php?_register_step=1&_error=Please-enter-a-date-and-birth.
+RewriteRule ^quickregister/email_password_submit/invalid_username(|/)$ /register.php?_register_step=3&_error=That-username-cannot-be-used,-sorry!
+RewriteRule ^quickregister/email_password_submit/invalid_email(|/)$ /register.php?_register_step=3&_error=Oops!-Looks-like-your-email-is-invalid,-please-enter-a-valid-one.
+RewriteRule ^quickregister/email_password_submit/invalid_password(|/)$ /register.php?_register_step=3&_error=That-password-does-not-meet-our-standards.-Please-choose-a-new-one.
+RewriteRule ^quickregister/captcha/error(|/)$ /register.php?_register_step=5&_error=You-entered-an-invalid-captcha.-Please-enter-it-again.
+
+# Other Rules
+RewriteRule ^me(|/)$ /me.php
+RewriteRule ^community(|/)$ /community.php
+RewriteRule ^articles(|/)$ /news.php
+RewriteRule ^vip(|/)$ /vip.php
+RewriteRule ^profile(|/)$ /profile.php
+RewriteRule ^client(|/)$ /client.php
+RewriteRule ^account/signout(|/)$ /signout.php
+RewriteRule ^articles/([^/]+)(|/)$ /news.php?_news_article_seo=$1
+RewriteRule ^articles/id/([^/]+)(|/)$ /news.php?_news_id=$1
+RewriteRule ^go/vip/([^/]+)(|/)$ /viplink.php?override=true&package=$1
+RewriteRule ^profile/basic_settings(|/)$ /profile.php?_profile_page=account_settings
+RewriteRule ^profile/password(|/)$ /profile.php?_profile_page=pass_settings
+RewriteRule ^client_denied(|/)$ /pincode.php
+RewriteRule ^flash_client_error(|/)$ /client.php?e=flash_client_error
+RewriteRule ^community/badgeshop(|/)$ /badge_shop.php
+RewriteRule ^community/staff(|/)$ /staff.php
+RewriteRule ^community/founders(|/)$ /staff.php?_rankGroup=founders
+RewriteRule ^community/sadmins(|/)$ /staff.php?_rankGroup=sadmins
+RewriteRule ^community/admins(|/)$ /staff.php?_rankGroup=admins
+RewriteRule ^community/mods(|/)$ /staff.php?_rankGroup=moderators
+RewriteRule ^buyvip(|/)$ /vip.php
+RewriteRule ^account/disconnected(|/)$ /disconnected.html
+
+# Profile Rules
+RewriteRule ^user/([^/]+)(|/)$ /userprofile.php?_username=$1
+RewriteRule ^user/id/([^/]+)(|/)$ /userprofile.php?_userid=$1

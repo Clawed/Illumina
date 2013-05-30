@@ -1,0 +1,441 @@
+﻿html, body {
+	margin : 0;
+	padding : 0;
+	width : 100%;
+    height : 100%;	font-family:Ubuntu, sans-serif;
+	font-size:12px;
+	background:url(images/background.gif) repeat;
+}
+
+.Login > .Box:first-child {
+	margin:0 auto;
+	position:relative;
+	top:50px;
+	width:320px;
+}
+
+.wrapper {
+	position : relative;
+	background:url(images/left.png) repeat-y left top #FFFFFF;
+	margin : 0 auto;
+	width : 980px;
+	height : auto !important;
+	height : 100%;
+	min-height : 100%;
+}
+
+.subwrapper {
+	background:url(images/left.png) repeat-y left top #FFFFFF;
+	-moz-box-shadow: 0 -3px 3px rgba(50, 50, 50, 0.30);
+	-webkit-box-shadow: 0 -3px 3px rgba(50, 50, 50, 0.30);
+	box-shadow: 0 -3px 3px rgba(50, 50, 50, 0.30);
+	border-left: 1px solid #dfdfdf\9;
+	border-right: 1px solid #dfdfdf\9;
+	width : 100%;
+	height : auto !important;
+	height : 100%;
+	min-height : 100%;
+}
+
+.HeadBar {
+	z-index:999;
+	height:100px;
+	display:block;
+	background:url(images/roc.png) no-repeat right top #FFFFFF;
+}
+
+.HeadBar > h1 {
+	padding:20px 35px 0 25px;
+	font-weight:normal;
+}
+
+.Menu {
+	display:block;
+	background:url(images/menu.png) repeat-x right top;
+	height:33px;
+}
+
+.Menu ul {
+	margin:0;
+	padding:0;
+	float:left;
+}
+
+.Menu ul li {
+	list-style-type:none;
+	margin:0;
+	float:left;
+	height:20px;
+	line-height:20px;
+	border-right:1px solid #d9d9d9;
+	padding:5px 25px 5px 25px;
+	text-transform:uppercase;
+}
+
+.SubMenu {
+	float:left;
+	margin: 0px 20px 20px 0px;
+	position:relative;
+	padding:0 0 0 20px;
+	overflow:hidden;
+	width:210px;
+}
+.Box {
+	display:block;
+	background:#FFFFFF;
+	border:1px solid #e6e6e6;
+	margin:0 20px 20px 0;
+	-moz-box-shadow:1px 1px 0 #e6e6e6;
+	-webkit-box-shadow:1px 1px 0 #e6e6e6;
+	box-shadow:1px 1px 0 #e6e6e6;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color='#e6e6e6')";
+	filter:progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color='#e6e6e6');
+	zoom:1;
+}
+
+.Box:first-child {
+	display:block;
+	margin-top:20px;
+}
+
+.Box > h3 {
+	margin:5px 0;
+}
+
+.Box > .Title {
+	display:block;
+	position:relative;
+	background:url(images/title.gif) repeat-x left top;
+	padding:8px 10px 0 ;
+	text-transform:uppercase;
+	height:21px;
+	line-height:15px;
+}
+
+.Box > .Content {
+	display:block;
+	background:url(images/shadow.gif) repeat-x left top;
+	padding:10px;
+}
+
+a, a:visited {
+	text-decoration:none;
+	color:#000;
+}
+
+.Box > .nopadding {
+	padding:0;
+}
+
+.Content > .StepRow {
+	display : inline-block;
+	background: url(images/shadow.gif) repeat-x left bottom;
+	margin : 1px 0 0;
+	padding : 0;
+	list-style : none;
+	width : 100%;
+	height : 32px;
+}
+
+.Content > .StepContent {
+	display : block;
+	overflow : hidden;
+}
+
+.Content > .StepActions {
+	display : block;
+	background: url(images/shadow.gif) repeat-x left top;
+	padding : 6px 8px 0;
+	height : 30px;
+}
+
+.MainContentBox {
+	display : block;
+	position : relative;
+	background : #FFFFFF;
+	margin : 0 0 0 250px;
+	padding : 0 0 61px;
+	height:auto;
+}
+
+a.btn {
+	background : url(images/button.gif) no-repeat left top #fdfdfd;
+	overflow : hidden;
+	width : auto;
+	height : 26px;
+	display: inline-block;
+}
+
+a.btn:hover {
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+
+a.btn > img {
+	float : left;
+	display : inline-block;
+	padding: 5px 5px 0 5px;
+	margin : 0;
+	height : 16px;
+}
+
+a.btn > span {
+	float : left;
+	background : url(images/button.gif) no-repeat right top;
+	padding : 0 8px 0 0;
+	font : 11px/2.5em 'MuseoSans500', Arial;
+	color : #7b7b7b;
+	text-transform : uppercase;
+}
+
+table {
+	font-size:12px;
+	width : 100%;
+}
+
+table, td, tr, th {
+	padding : 0;
+	margin : 0;
+	border-collapse : collapse;
+	text-align : left;
+}
+
+table thead tr th, table tfoot tr th {
+	color : #1c1c1c;
+}
+
+table thead {
+	background : url(images/title.gif) repeat-x right top;
+	border-right : none;
+}
+
+table thead tr th{
+	border : 1px solid #e6e6e6;
+	padding : 8px 10px 8px;
+	line-height : 1.1em;
+}
+
+table tbody td {
+	border : 1px solid #e6e6e6;
+	border-top : none;
+	padding : 8px 10px;
+	line-height : 1.1em;
+}
+
+table tbody tr.even td {
+	background-color : #fafafa;
+}
+
+.StepContent > .Content {
+	padding:20px;
+}
+
+.StepRow li {
+	float : left;
+	background : none;
+	border-right : 1px solid #dcdcdc;
+	padding : 0;
+}
+
+.StepRow li a {
+	float : left;
+	padding : 1px 11px 0 11px;
+	font : 12px/28px Arial;
+	color : #989898;
+	text-decoration : none;
+	outline : none;
+}
+
+.StepRow li a.selected {
+	background : #FFFFFF;
+	color : #000000;
+	font-weight : bold;
+	text-decoration : none;
+}
+
+.StepActions > a {
+	float : right;
+	-moz-box-shadow: 1px 1px 0 #ededed;
+	-webkit-box-shadow: 1px 1px 0 #ededed;
+	box-shadow: 1px 1px 0 #ededed;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color='#ededed')";
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color='#ededed');
+	border : 1px solid #d4d4d4;
+	padding : 0 15px;
+	margin : 0 0 0 4px;
+	font : 13px/23px 'MuseoSans500', Arial;
+	text-transform : uppercase;
+	text-decoration : none;
+}
+
+.StepActions > a.buttonDisabled {
+	background : url(images/forms-btn.gif) repeat-x left top #FFFFFF;
+	border : 1px solid #d2d2d2;
+	color : #CCCCCC !important;}
+
+.btn-next, .btn-prev {
+	background : url(images/forms-btn.gif) repeat-x left -75px #FFFFFF;
+	border : 1px solid #0049ac;
+	color : #FFFFFF;
+}
+
+.btn-finish {
+	background : url(images/forms-btn.gif) repeat-x left -25px #FFFFFF;
+	border : 1px solid #ba0000;
+	color : #FFFFFF;
+}
+
+.btn-next:visited, .btn-prev:visited, .btn-finish:visited {
+	color: #FFFFFF;
+}
+
+form {
+	display : block;
+	margin : 0;
+	padding : 0;
+}
+
+.FormInput {
+	display : block;
+	position : relative;
+	border-bottom : 1px solid #e5e5e5;
+	padding : 10px 15px 10px 0;
+	*padding : 9px 15px 9px 0;
+}
+
+.FormInput:first-child {
+	border-top : 1px solid #e5e5e5;
+}
+
+.FormInput > .right {
+	display: block;
+	margin: 0 0 0 125px;
+}
+
+.Login > .Box > .Content > form {
+	margin:0 10px 10px 10px;
+}
+
+.Login > .Box > .Content > form > .FormInput label {
+	left : 15px;
+}
+
+.FormInput label {
+	position : absolute;
+	top : 16px;
+	left : 0;
+	padding : 0;
+	margin : 0;
+	cursor : text;
+	width : 125px;
+}
+
+.FormInput > .right > input {
+	display : inline-block;
+	background : url(images/input-back.gif) repeat-x left top;
+	border : 1px solid #dcdcdc;
+	outline : 0;
+	padding : 5px;
+	margin : 0;
+	font : 12px/1.2em Arial;
+	width : 100%;
+	height : 22px;
+}
+
+.FormInput > .right > textarea {
+	display : inline-block;
+	background : url(images/input-back.gif) repeat-x left top;
+	border : 1px solid #dcdcdc;
+	resize : none;
+	outline : 0;
+	overflow : auto;
+	padding : 6px;
+	margin : 0;
+	font : 12px/1.5em Arial;
+	width : 100%;
+}
+
+.message {
+	position : relative;
+	display : inline-block;
+	margin : 10px 15px 5px 15px;
+	padding : 0 0 0 35px;
+	clear : both;
+	cursor : pointer;
+	-moz-box-shadow: 1px 1px 0 #e6e6e6;
+	-webkit-box-shadow: 1px 1px 0 #e6e6e6;
+	box-shadow: 1px 1px 0 #e6e6e6;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color='#e6e6e6')";
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color='#e6e6e6');
+	zoom: 1;
+}
+
+.message:hover {
+	opacity : 0.7;
+	filter : alpha(opacity=70);
+}
+
+.message span {
+	display : block;
+	padding : 13px 0;
+	font : 12px/1.0em Arial;
+}
+
+.message.red {
+	display : block;
+	background : url(images/icons/msgerror.png) no-repeat 10px 8px #F8E9E9;
+	border : 1px solid #E4BBBC;
+	color : #b80000;
+}
+
+.message.green {
+	display : block;
+	background : url(images/icons/msgsuccess.png) no-repeat 10px 8px #EBF9E2;
+	border : 1px solid #BEE4A5;
+	color : #6aa500;
+}
+
+.message.blue {
+	display : block;
+	background : url(images/icons/msginfo.png) no-repeat 10px 8px #E9F3F8;
+	border : 1px solid #BBD7E4;
+	color : #136bc5;
+}
+
+.message.orange {
+	display : block;
+	background : url(images/icons/msgwarning.png) no-repeat 10px 8px #FFF8D8;
+	border : 1px solid #F3D97E;
+	color : #ed9d12;
+}
+
+.Footer {
+	position : absolute;
+	bottom : 0;
+	left : 0;
+	background:url(images/footer.gif) repeat-x left top #F5F5F5;
+	border-bottom : 5px solid #FFFFFF;
+	font : 11px/1.0em Arial;
+	color : #909090;
+	overflow : hidden;
+	width : 100%;
+	height : 36px;
+}
+
+.Footer > .LeftText {
+	display:block;
+	padding:10px 20px 0;
+	width:50%;
+	height:23px;
+}
+
+.Footer > .RightText {
+	display:block;
+	padding:10px 20px 0;
+	width:50%;
+	height:23px;
+	position:absolute;
+	top:0;
+	right:0;
+	text-align:right;
+}

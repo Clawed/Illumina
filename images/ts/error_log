@@ -1,0 +1,1 @@
+[14-Feb-2013 15:06:10 America/New_York] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/: cannot read file data: Is a directory in Unknown on line 0

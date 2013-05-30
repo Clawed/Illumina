@@ -1,0 +1,168 @@
+/* Register.CSS - Copyright (c) 2011 Oliver Robson */
+
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background: url('../images/bg.png');
+    font-size: 11px;
+    padding: 0;
+    margin: 0;
+}
+
+p, ul, li {
+    padding: 0;
+	margin: 0;
+}
+
+a.orange {
+    color: #FC6236;
+}
+
+.relative {
+    position: relative;
+}
+
+.center {
+	margin: 0px auto;
+}
+	
+.static {
+	width: 576px;
+	height: 100%;
+	text-align: left;
+}
+
+div.contentBox {
+	margin: 25px 0 0 0;
+	text-align: left;
+	height: auto;
+	width: 576px;
+}
+
+div.contentBox > div.boxHeader {
+	background-image: url('../images/reg_header.png');
+	height: 42px;
+	width: 100%;
+	color: #FFFFFF;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 46px;
+}
+
+div.contentBox > div.subHeader {
+	background-image: url('../images/reg_subheader.png');
+	border-top: 1px solid #000000;
+	height: 59px;
+	width: 100%;
+}
+
+div.contentBox > form > div.box1 {
+	background-image: url('../images/reg_1.png');
+	border-top: 1px solid #000000;
+	background-repeat: no-repeat;
+	height: 370px;
+	width: 100%;
+}
+
+div.contentBox > form > div.box1 > div.left {
+	position: absolute;
+	float: left;
+	width: 50%;
+}
+
+div.contentBox > form > div.box1 > div.right {
+	margin: 119px 0 0 0;
+	float: right;
+	width: 50%;
+}
+
+div.contentBox > form > div.box1 > div.left, div.contentBox > div.box1 > div.right {
+	margin: 14px 0 0 14px;
+}
+
+label {
+	font-weight: bold;
+	margin: 0 0 0 2px;
+}
+
+label.info {
+	font-weight: normal;
+	color: #A0A0A0;
+	margin: 0;
+}
+
+input[type="text"], input[type="password"] {
+	border-bottom: 1px solid #E3E3E3;
+	border-right: 1px solid #C6C6C6;
+	border-left: 1px solid #C6C6C6;
+	border-top: 1px solid #C6C6C6;
+	color: #ABADB3;
+	padding: 2px;
+}
+
+input[type="submit"], input[type="button"] {
+	background: url('../images/btn_norm.png') #CCCCCC repeat-x;
+	padding: 6px 25px 6px 25px;
+	border: 2px solid #000000;
+	border-radius: 3px;
+	margin-right: 18px;
+	font-weight: bold;
+	cursor: pointer;
+	float: right;
+	height: auto;
+	width: auto;
+}
+
+input[type="submit"]:hover, input[type="button"]:hover {
+	background: url('../images/btn_hove.png') #EAEAEA repeat-x;
+}
+
+div.contentBox > form > div.box2 {
+	background-image: url('../images/reg_2.png');
+	border-top: 1px solid #000000;
+	background-repeat: no-repeat;
+	height: 270px;
+	width: 100%;
+}
+
+div.contentBox > form > div.box2 > div.left {
+	margin: 16px 0 0 16px;
+	position: absolute;
+	width: 106px;
+	height: 100%;
+	float: left;
+}
+
+div.contentBox > form > div.box2 > div.left > div.pbox {
+	background: transparent url('../images/reg_preview.png') no-repeat bottom left;
+	position: relative;
+	height: 157px;
+	width: 106px;
+	float: left; 
+}
+
+div.contentBox > form > div.box2 > div.left > div.pbox > img {
+	position: absolute;
+	bottom: 36px;
+	left: 22px;
+}
+
+.male-avatar, .female-avatar {
+	background: transparent url('../images/reg_btn_0.png') no-repeat 0 0;
+	margin: 0 3px 10px 0;
+	display: block;
+	height: 61px;
+	width: 35px;
+	float: left;
+}
+
+.male-avatar:hover, .female-avatar:hover {
+	background-image: url('../images/reg_btn_1.png');
+}
+
+div.contentBox > form > div.box2 > div.right {
+	margin: 16px 0 0 16px;
+	width: 420px;
+	height: 100%;
+	float: right;
+}

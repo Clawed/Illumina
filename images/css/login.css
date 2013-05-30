@@ -1,0 +1,192 @@
+/* Login.CSS - Copyright (c) 2011 Oliver Robson */
+
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background: url('../images/bg.png');
+    font-size: 11px;
+    padding: 0;
+    margin: 0;
+}
+
+p, ul, li {
+    padding: 0;
+    margin: 0;
+}
+
+a.orange {
+    color: #FC6236;
+}
+
+.relative {
+    position: relative;
+}
+
+.center {
+	margin: 0px auto;
+}
+	
+.static {
+	width: 905px;
+	height: 100%;
+	text-align: left;
+}
+
+div.header {
+	background: url('../images/login_header.png') repeat-x;
+	border-bottom: 1px solid #000000;
+    height: 101px !important;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+div.logo {
+    position: absolute;
+    height: 52px;
+    width: 110px;
+    top: 20px;
+    left: 0;
+}
+
+form > div.loginBox-E {
+	position: absolute;
+	height: 40px;
+	width: 250px;
+	float: left;
+	left: 200px;
+	top: 30px;
+}
+
+form > div.loginBox-E > label {
+	color: #FFFFFF;
+}
+
+form > div.loginBox-E > input[type="text"] {
+	border: 1px solid #ABADB3;
+	color: #ABADB3;
+	padding: 3px;
+	width: 200px;
+}
+
+form > div.loginBox-E > input[type="checkbox"] {
+	margin: 4px 8px 0 0;
+}
+
+form > div.loginBox-P {
+	position: absolute;
+	height: 40px;
+	width: 250px;
+	float: left;
+	left: 412px;
+	top: 30px;
+}
+
+form > div.loginBox-P > label {
+	color: #FFFFFF;
+}
+
+form > div.loginBox-P > input[type="password"] {
+	border: 1px solid #ABADB3;
+	color: #ABADB3;
+	padding: 3px;
+	width: 128px;
+}
+
+form > div.loginBox-P > a.forgot {
+	text-decoration: underline;
+	color: #FFFFFF;
+}
+
+form > div.loginBox-S {
+	position: absolute;
+	height: 40px;
+	width: 180px;
+	float: left;
+	left: 560px;
+	top: 38px;
+}
+
+form > div.loginBox-S > input[type="submit"] {
+	background: url('../images/btn_norm.png') #CCCCCC repeat-x;
+	padding: 6px 25px 6px 25px;
+	border: 2px solid #000000;
+	border-radius: 3px;
+	font-weight: bold;
+	cursor: pointer;
+	height: auto;
+	width: auto;
+}
+
+form > div.loginBox-S > input[type="submit"]:hover {
+	background: url('../images/btn_hove.png') #EAEAEA repeat-x;
+}
+div.usersOnline {
+	position: absolute;
+	background: #FFFFFF repeat-x;
+	top: 32px;
+	left: 680px;
+	width: 150px;
+	-moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+div.joinNow-C {
+	margin: 25px 0 0 -54px;
+}
+
+div.joinNow-C > div.button {
+	background: url('../images/join_now.png') top no-repeat;
+	cursor: pointer;
+	height: 121px;
+	width: 228px;
+}
+
+div.joinNow-C > div.button:hover {
+	background-position: bottom;
+}
+
+div.joinNow-C > div.button > span.text-big {
+	padding: 26px 0 0 0;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 28px;
+	font-weight: bold;
+	text-decoration: none;
+	letter-spacing: -0.005em;
+	text-shadow: #333 0 -1px 0;
+	display:block;
+}
+
+div.joinNow-C > div.button > span.text-small {
+	color: #FFFFFF;
+	font-size: 24px;
+	font-weight: normal;
+	text-decoration: none;
+	text-align: center;
+	text-shadow: #000 0 -1px 0;
+	display:block;
+}
+
+.backdrop {
+	background: url('../fplanding.png');
+	cursor: pointer;
+	height: 400px;
+	width: 800px;
+}
+
+div.advert {
+	background-color: #FFFFFF;
+	border: 1px solid #B5B5AF;
+	border-bottom: 2px solid #B5B5AF;
+	border-radius: 5px;
+	padding: 5px;
+	margin: 50px 0 50px 0;
+}
+
+div.advert > label {
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #B5B5AF;
+}
