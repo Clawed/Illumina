@@ -3,6 +3,7 @@
 	if(!defined('In_ZapHK')) { exit; }
 	if(isLogged()) {
 		header ("Location: index.php?_page=dashboard");
+		exit;
 	}
 	
 	if(isset($_POST["Username"]) && isset($_POST["Password"])) {
@@ -12,7 +13,8 @@
 			$_SESSION["Username"] = $_SESSION["HK_Username"];
 			$_SESSION["HashedPassword"] = $_SESSION["HK_HashedPass"];
 			
-			header ("Location: index.php?_page=dashboard");	
+			header ("Location: index.php?_page=dashboard");
+			exit;
 		}
 		else {
 			die('Incorrect login.');

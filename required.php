@@ -37,9 +37,12 @@
 	if($light->maintenance && !defined("NO_MAINT_HERE")) {
 		if(!$users->isLogged()) {
 			header ("Location: " . WWW . "/maintenance.php");
+			exit;
 		}
 		else if($users->isLogged() && USER_RANK < 6) {
 			header ("Location: " . WWW . "/maintenance.php");
+			exit;
+			
 		}
 	}
 	

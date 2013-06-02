@@ -16,9 +16,11 @@
 
 	if($users->isLogged()) {
 		header ("Location: " . WWW . "/me");
+		exit;
 	}
 	else if(!$light->reg_enabled) {
 		header ("Location: " . WWW . "/index.php?registerDisabled");
+		exit;
 	}
 	else if(isset($_GET["_error"])) {
 		$gerr = $db->real_escape_string($_GET["_error"]);
@@ -37,6 +39,7 @@
 	
 	if($db->lnumrows("SELECT null FROM users WHERE ip_last = '" . $_SERVER["REMOTE_ADDR"] . "' OR ip_reg = '" . $_SERVER["REMOTE_ADDR"] . "'") >= $light->max_per_ip) {
 		header ("Location: " . WWW . "/index.php?maxAccountsReached");
+		exit;
 	}
 	
 	$tpl->assign('title', 'Register an account');
@@ -57,11 +60,13 @@
 				$_SESSION["_userAge"] = $d . "/" . $m . "/" . $y;
 				$_SESSION["_userGender"] = $g;
 				header ("Location: " . WWW . "/quickregister/email_password");
+				exit;
 			}
 		}
 		else if($s == 3) { // email_password - get their email and their password for future logins
 			if(!isset($_SESSION["_ageGatePass"]) || !isset($_SESSION["_userAge"]) || !isset($_SESSION["_userGender"])) {
 				header ("Location: " . WWW . "/quickregister/age_gate/error");
+				exit;
 			}
 			else {
 				$tpl->draw('quickregister-step2');
@@ -78,6 +83,7 @@
 				$t = $db->real_escape_string($_POST["bean_termsOfServiceSelection"]);
 				if(!$users->isUsernameValid($u)) {
 					header("Location: " . WWW . "/quickregister/email_password_submit/invalid_username");
+					exit;
 				}
 				else {
 					if($e == $e2 && $users->isEmailValid($e)) {
@@ -88,18 +94,22 @@
 							$_SESSION["_userPassword"] = $p;
 							$_SESSION["_userName"] = $u;
 							header("Location: " . WWW . "/quickregister/captcha");
+							exit;
 						}
 						else {
 							header("Location: " . WWW . "/quickregister/email_password_submit/invalid_password");
+							exit;
 						}
 					}
 					else {
 						header("Location: " . WWW . "/quickregister/email_password_submit/invalid_email");
+						exit;
 					}
 				}	
 			}
 			else {
 				header ("Location: " . WWW . "/quickregister/email_password_submit/fields");
+				exit;
 			}
 		}
 		else if($s == 5) {
@@ -140,14 +150,17 @@
 					unset($user_password);
 
 					header ("Location: " . WWW . "/me");
+					exit;
 				}
 				else {
 					header ("Location: " . WWW . "/quickregister/captcha/error");
+					exit;
 				}	
 			}
 		}
 		else {
 			header("Location: " . WWW . "/quickregister/captcha");
+			exit;
 		}
 	}
 ?>

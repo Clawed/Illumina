@@ -17,9 +17,11 @@
 	
 	if(!$light->maintenance) {
 		header ("Location: " . WWW . "/");
+		exit;
 	}
 	else if($users->isLogged()) {
 		header ("Location: " . WWW . "/me");
+		exit;
 	}
 	
 	$tpl->assign('title', 'Maintenance break');

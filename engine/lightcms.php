@@ -151,7 +151,7 @@
 						echo "<li>" . $newslist['title'] . "</li>";
 					}
 					else {
-						echo "<li><a href='" . WWW . "/articles/" . $_seo . "'>" . stripslashes($newslist['title']) . "</a></li>";
+						echo "<li><a href='" . WWW . "/articles/" . $_seo . "'>" . htmlentities(stripslashes($newslist['title'])) . "</a></li>";
 					}
 				}
 			}
@@ -171,9 +171,9 @@
 							echo 	'<li class="' . $oddEven . '">
 							<div class="hotcampaign-container">
 							<a href="' . $url . '">
-							<img src="' . $imgurl . '" align="left" alt="' . $camps['caption'] . '"/></a>
-							<h3>' . $camps['caption'] . '</h3>
-							<p>' . $camps['descr'] . '</p>
+							<img src="' . $imgurl . '" align="left" alt="' . htmlentities(stripslashes($camps['caption'])) . '"/></a>
+							<h3>' . htmlentities(stripslashes($camps['caption'])) . '</h3>
+							<p>' . htmlentities(stripslashes($camps['descr'])) . '</p>
 							<p class="link"><a href="' . $url . '">Go there &raquo;</a></p>
 							</div>';
 					}
@@ -287,7 +287,7 @@
 					echo "<br /><br /><a href='" . WWW . "/user/" . $users->idToName($pageid) . "&deleteComment=" . $cData['id'] . "'>Delete</a>";
 				}
 				echo "</center></td>";
-				echo "<td>" . stripslashes($cData["message"]);
+				echo "<td>" . htmlentities(stripslashes($cData["message"]));
 				echo "</td>";
 				echo "</tr>";
 				

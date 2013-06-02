@@ -19,6 +19,7 @@
 	if(!isset($_GET["novote"]) && $light->thehabbos_enabled && $light->isVotingOnline()) {
 		$vote_uri = str_replace('/', '!', WWW);
 		header ("Location: http://votingapi.com/vote.php?username=" . $light->thehabbos_username . "&api=" . $vote_uri . "!?novote");
+		exit;
 	}
 	
 	$tpl->assign('loginError', null);
@@ -26,6 +27,7 @@
 	
 	if ($users->isLogged()) {
 		header ("Location: /me");
+		exit;
 	}
 	if (isset($_POST["credentials_username"]) && isset($_POST["credentials_password"])) {
 		$u = $db->real_escape_string($_POST["credentials_username"]);
@@ -35,6 +37,7 @@
 			$_SESSION["Username"] = $users->userVar($u, 'username');
 			$_SESSION["HashedPassword"] = $p;
 			header ("Location: " . WWW . "/me");
+			exit;
 		}
 		else {
 			$tpl->assign('LoginError', 'Invalid username or password.');

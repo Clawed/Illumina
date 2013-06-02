@@ -4,6 +4,7 @@
 
 	if(!isLogged()) {
 		header ("Location: login.php");
+		exit;
 	}
 	
 	if(isset($_GET["_page"])) {

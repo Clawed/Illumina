@@ -16,6 +16,7 @@
 	
 	if(!$users->isLogged()) {
 		header ("Location: " . WWW . "/");
+		exit;
 	}
 	
 	define('CommunitySelected', true);

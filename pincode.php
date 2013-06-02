@@ -16,6 +16,7 @@
 	
 	if(!$light->pin_enabled) {
 		header ("Location: " . WWW . "/client");
+		exit;
 	}
 	
 	if(isset($_SESSION["Attempts"])) {
@@ -32,6 +33,7 @@
 		if($pin == $currentPin) {
 			$_SESSION["Pincode_Passed"] = true;
 			header ("Location: " . WWW . "/client");
+			exit;
 		}
 		else {
 			if(!isset($_SESSION["Attempts"])) {

@@ -10,6 +10,7 @@
 	}
 	else if(!isset($_GET["articleId"])) {
 		header("Location: " . WWW . "/admin/index.php?_page=writenews");
+		exit;
 	}
 	else {
 		$id = filter($_GET["articleId"]);

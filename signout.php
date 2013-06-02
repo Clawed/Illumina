@@ -17,5 +17,6 @@
 	unset($_SESSION["Username"]);
 	unset($_SESSION["HashedPassword"]);
 	header ("Location: " . WWW . "/");
+	exit;
 
 ?>
